@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8448EB2A2B6193B60085EA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB292B6193B60085EA67 /* AppDelegate.swift */; };
 		8448EB2C2B6193B60085EA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB2B2B6193B60085EA67 /* SceneDelegate.swift */; };
-		8448EB2E2B6193B60085EA67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB2D2B6193B60085EA67 /* ViewController.swift */; };
+		8448EB2E2B6193B60085EA67 /* ImagesListViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift.swift */; };
 		8448EB312B6193B60085EA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448EB2F2B6193B60085EA67 /* Main.storyboard */; };
 		8448EB342B6193B60085EA67 /* ImageFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB322B6193B60085EA67 /* ImageFeed.xcdatamodeld */; };
 		8448EB362B6193B90085EA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EB352B6193B90085EA67 /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		8448EB262B6193B60085EA67 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448EB292B6193B60085EA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8448EB2B2B6193B60085EA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8448EB2D2B6193B60085EA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift.swift; sourceTree = "<group>"; };
 		8448EB302B6193B60085EA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8448EB332B6193B60085EA67 /* ImageFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageFeed.xcdatamodel; sourceTree = "<group>"; };
 		8448EB352B6193B90085EA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,10 +103,10 @@
 			children = (
 				8448EB292B6193B60085EA67 /* AppDelegate.swift */,
 				8448EB2B2B6193B60085EA67 /* SceneDelegate.swift */,
-				8448EB2D2B6193B60085EA67 /* ViewController.swift */,
+				8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift.swift */,
 				8448EB2F2B6193B60085EA67 /* Main.storyboard */,
-				8448EB352B6193B90085EA67 /* Assets.xcassets */,
 				8448EB372B6193B90085EA67 /* LaunchScreen.storyboard */,
+				8448EB352B6193B90085EA67 /* Assets.xcassets */,
 				8448EB3A2B6193B90085EA67 /* Info.plist */,
 				8448EB322B6193B60085EA67 /* ImageFeed.xcdatamodeld */,
 			);
@@ -209,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8448EB212B6193B60085EA67 /* Build configuration list for PBXProject "ImageFeed" */;
+			buildConfigurationList = 8448EB212B6193B60085EA67 /* Build configuration list for PBXProject "ImageFeedЬн" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8448EB2E2B6193B60085EA67 /* ViewController.swift in Sources */,
+				8448EB2E2B6193B60085EA67 /* ImagesListViewController.swift.swift in Sources */,
 				8448EB342B6193B60085EA67 /* ImageFeed.xcdatamodeld in Sources */,
 				8448EB2A2B6193B60085EA67 /* AppDelegate.swift in Sources */,
 				8448EB2C2B6193B60085EA67 /* SceneDelegate.swift in Sources */,
@@ -452,8 +452,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -481,8 +481,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,7 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -576,7 +576,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8448EB212B6193B60085EA67 /* Build configuration list for PBXProject "ImageFeed" */ = {
+		8448EB212B6193B60085EA67 /* Build configuration list for PBXProject "ImageFeedЬн" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8448EB512B6193B90085EA67 /* Debug */,
