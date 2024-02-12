@@ -9,6 +9,8 @@ import UIKit
 
 class ImagesListViewController: UIViewController {
 
+    func configCell(for cell: ImagesListCell) { }
+
     @IBOutlet private var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -23,8 +25,15 @@ extension ImagesListViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
+            let cell = tableView.dequeueReusableCell(withIdentifier: ImagesListCell.reuseIdentifier, for: indexPath) // 1
+
+            guard let imageListCell = cell as? ImagesListCell else { // 2
+                return UITableViewCell()
+            }
+
+            configCell(for: imageListCell) // 3
+            return imageListCell // 4
+        }
 }
 
 extension ImagesListViewController: UITableViewDelegate {
