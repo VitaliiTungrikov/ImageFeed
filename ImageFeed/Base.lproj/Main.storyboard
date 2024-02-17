@@ -52,11 +52,11 @@
                                                     <state key="normal" image="LikeButton_On"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.02.2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-c5-s2V" userLabel="Date Label">
-                                                    <rect key="frame" x="24.000000000000007" y="196.33333333333334" width="101.66666666666669" height="15.666666666666657"/>
+                                                    <rect key="frame" x="24.000000000000007" y="197.66666666666666" width="101.66666666666669" height="14.333333333333343"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="101.5" id="TEM-B7-cao"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
