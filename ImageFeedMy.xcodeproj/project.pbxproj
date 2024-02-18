@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8448EB2A2B6193B60085EA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB292B6193B60085EA67 /* AppDelegate.swift */; };
 		8448EB2C2B6193B60085EA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB2B2B6193B60085EA67 /* SceneDelegate.swift */; };
-		8448EB2E2B6193B60085EA67 /* ImagesListViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift.swift */; };
+		8448EB2E2B6193B60085EA67 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift */; };
 		8448EB312B6193B60085EA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448EB2F2B6193B60085EA67 /* Main.storyboard */; };
 		8448EB342B6193B60085EA67 /* ImageFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8448EB322B6193B60085EA67 /* ImageFeed.xcdatamodeld */; };
 		8448EB362B6193B90085EA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448EB352B6193B90085EA67 /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 		8448EB262B6193B60085EA67 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448EB292B6193B60085EA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8448EB2B2B6193B60085EA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift.swift; sourceTree = "<group>"; };
+		8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 		8448EB302B6193B60085EA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8448EB332B6193B60085EA67 /* ImageFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageFeed.xcdatamodel; sourceTree = "<group>"; };
 		8448EB352B6193B90085EA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				84F1F1682B7A749300BCD2AB /* ImagesListCell.swift */,
-				8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift.swift */,
+				8448EB2D2B6193B60085EA67 /* ImagesListViewController.swift */,
 			);
 			path = ImagesList;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8448EB2E2B6193B60085EA67 /* ImagesListViewController.swift.swift in Sources */,
+				8448EB2E2B6193B60085EA67 /* ImagesListViewController.swift in Sources */,
 				8448EB342B6193B60085EA67 /* ImageFeed.xcdatamodeld in Sources */,
 				84F1F1692B7A749300BCD2AB /* ImagesListCell.swift in Sources */,
 				8448EB2A2B6193B60085EA67 /* AppDelegate.swift in Sources */,
@@ -465,7 +465,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,7 +494,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

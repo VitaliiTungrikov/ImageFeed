@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bSN-tw-SSo">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="896" id="3tV-Oo-9VB"/>
                                     <constraint firstAttribute="width" constant="414" id="Cva-ol-H1C"/>
@@ -51,12 +51,12 @@
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="LikeButton_On"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.02.2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-c5-s2V" userLabel="Date Label">
-                                                    <rect key="frame" x="24.000000000000007" y="197.66666666666666" width="101.66666666666669" height="14.333333333333343"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="14.02.2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-c5-s2V" userLabel="Date Label">
+                                                    <rect key="frame" x="24" y="196" width="101.66666666666669" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="101.5" id="TEM-B7-cao"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -65,7 +65,7 @@
                                             <constraints>
                                                 <constraint firstItem="nf6-r1-XN6" firstAttribute="top" secondItem="mt5-GG-qlp" secondAttribute="top" constant="4" id="4iY-fE-Odd"/>
                                                 <constraint firstItem="nf6-r1-XN6" firstAttribute="leading" secondItem="mt5-GG-qlp" secondAttribute="leading" constant="16" id="6rA-hR-T7u"/>
-                                                <constraint firstItem="glF-c5-s2V" firstAttribute="leading" secondItem="mt5-GG-qlp" secondAttribute="leadingMargin" constant="4" id="GDp-Bo-2We"/>
+                                                <constraint firstItem="glF-c5-s2V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mt5-GG-qlp" secondAttribute="leadingMargin" constant="8" id="GDp-Bo-2We"/>
                                                 <constraint firstAttribute="trailing" secondItem="nf6-r1-XN6" secondAttribute="trailing" constant="16" id="Hya-Y6-WEN"/>
                                                 <constraint firstItem="nf6-r1-XN6" firstAttribute="bottom" secondItem="glF-c5-s2V" secondAttribute="bottom" constant="8" id="OBx-uf-moD"/>
                                                 <constraint firstAttribute="bottom" secondItem="nf6-r1-XN6" secondAttribute="bottom" constant="4" id="hb8-LZ-XCC"/>
