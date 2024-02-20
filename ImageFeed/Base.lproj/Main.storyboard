@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -46,30 +45,29 @@
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H27-oC-Iu1">
-                                                    <rect key="frame" x="372" y="4" width="42" height="42"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H27-oC-Iu1">
+                                                    <rect key="frame" x="352" y="11" width="42" height="42"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="LikeButton_On"/>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="14.02.2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-c5-s2V" userLabel="Date Label">
-                                                    <rect key="frame" x="24" y="196" width="101.66666666666669" height="16"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="101.5" id="TEM-B7-cao"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.02.2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glF-c5-s2V" userLabel="Date Label">
+                                                    <rect key="frame" x="20" y="197" width="68.333333333333329" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="glF-c5-s2V" secondAttribute="bottom" id="0hv-9F-1aW"/>
                                                 <constraint firstItem="nf6-r1-XN6" firstAttribute="top" secondItem="mt5-GG-qlp" secondAttribute="top" constant="4" id="4iY-fE-Odd"/>
                                                 <constraint firstItem="nf6-r1-XN6" firstAttribute="leading" secondItem="mt5-GG-qlp" secondAttribute="leading" constant="16" id="6rA-hR-T7u"/>
-                                                <constraint firstItem="glF-c5-s2V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mt5-GG-qlp" secondAttribute="leadingMargin" constant="8" id="GDp-Bo-2We"/>
                                                 <constraint firstAttribute="trailing" secondItem="nf6-r1-XN6" secondAttribute="trailing" constant="16" id="Hya-Y6-WEN"/>
-                                                <constraint firstItem="nf6-r1-XN6" firstAttribute="bottom" secondItem="glF-c5-s2V" secondAttribute="bottom" constant="8" id="OBx-uf-moD"/>
+                                                <constraint firstItem="glF-c5-s2V" firstAttribute="leading" secondItem="mt5-GG-qlp" secondAttribute="leadingMargin" id="gIy-j5-Q5e"/>
                                                 <constraint firstAttribute="bottom" secondItem="nf6-r1-XN6" secondAttribute="bottom" constant="4" id="hb8-LZ-XCC"/>
-                                                <constraint firstAttribute="trailing" secondItem="H27-oC-Iu1" secondAttribute="trailing" constant="16" id="qrI-vZ-zbB"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="glF-c5-s2V" secondAttribute="trailing" multiplier="8" priority="250" id="n71-jn-whf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="H27-oC-Iu1" secondAttribute="trailing" id="rNL-fb-1sx"/>
+                                                <constraint firstItem="H27-oC-Iu1" firstAttribute="top" secondItem="mt5-GG-qlp" secondAttribute="topMargin" id="uan-O0-yzX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -86,7 +84,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bSN-tw-SSo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Oe-af-S7L"/>
                             <constraint firstItem="bSN-tw-SSo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iuf-Id-g8Z"/>
@@ -106,8 +104,5 @@
     <resources>
         <image name="0" width="1600" height="1059"/>
         <image name="LikeButton_On" width="42" height="42"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
