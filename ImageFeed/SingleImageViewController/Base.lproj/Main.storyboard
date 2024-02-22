@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J8R-a2-Gcv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ySc-dy-nv4">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -96,6 +96,7 @@
                                             <outlet property="cellImage" destination="nf6-r1-XN6" id="lEw-gW-wrZ"/>
                                             <outlet property="dateLabel" destination="glF-c5-s2V" id="SgL-4Q-xRi"/>
                                             <outlet property="likeButton" destination="H27-oC-Iu1" id="llY-0D-ntr"/>
+                                            <segue destination="J8R-a2-Gcv" kind="show" id="von-PR-pIy"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -144,6 +145,7 @@
                             <constraint firstItem="thw-1V-pyk" firstAttribute="topMargin" secondItem="ES9-yv-H3J" secondAttribute="top" constant="8" id="zsq-7i-JBs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xzf-I7-czj"/>
                     <connections>
                         <outlet property="imageView" destination="thw-1V-pyk" id="7A8-30-0W3"/>
                     </connections>
