@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ySc-dy-nv4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ySc-dy-nv4">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -117,7 +117,7 @@
                     <navigationItem key="navigationItem" id="5QO-cX-64a"/>
                     <connections>
                         <outlet property="tableView" destination="bSN-tw-SSo" id="brs-CN-SbP"/>
-                        <segue destination="J8R-a2-Gcv" kind="presentation" identifier="ShowSingleImage" id="GEy-3X-4o5"/>
+                        <segue destination="J8R-a2-Gcv" kind="show" identifier="ShowSingleImage" id="i9Y-Xj-IF6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,11 +132,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="thw-1V-pyk">
-                                <rect key="frame" x="-12" y="0.0" width="454" height="932"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AYf-B0-Vng">
+                                <rect key="frame" x="0.0" y="0.0" width="494" height="972"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="thw-1V-pyk">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="829"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="thw-1V-pyk" firstAttribute="leading" secondItem="AYf-B0-Vng" secondAttribute="leading" id="F6v-8v-UAG"/>
+                                    <constraint firstItem="OeU-rS-KkQ" firstAttribute="bottom" secondItem="thw-1V-pyk" secondAttribute="bottom" id="Gdo-D4-El2"/>
+                                    <constraint firstItem="OeU-rS-KkQ" firstAttribute="trailing" secondItem="thw-1V-pyk" secondAttribute="trailing" id="Hfu-CU-Lqi"/>
+                                    <constraint firstItem="thw-1V-pyk" firstAttribute="top" secondItem="AYf-B0-Vng" secondAttribute="top" id="Xd4-il-ADg"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="xc4-HH-TqQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OeU-rS-KkQ"/>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lv-IT-Dk5">
-                                <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                <rect key="frame" x="8" y="111" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Dba-w3-Cwe"/>
                                     <constraint firstAttribute="width" constant="48" id="pjV-IZ-XbV"/>
@@ -151,17 +164,18 @@
                         <viewLayoutGuide key="safeArea" id="ES9-yv-H3J"/>
                         <color key="backgroundColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="thw-1V-pyk" firstAttribute="leadingMargin" secondItem="ES9-yv-H3J" secondAttribute="leading" constant="8" id="DTo-JX-vGJ"/>
+                            <constraint firstAttribute="bottom" secondItem="AYf-B0-Vng" secondAttribute="bottom" id="BK2-EM-wgs"/>
                             <constraint firstItem="3Lv-IT-Dk5" firstAttribute="top" secondItem="ES9-yv-H3J" secondAttribute="top" constant="8" id="EqI-0S-a3Q"/>
-                            <constraint firstItem="ES9-yv-H3J" firstAttribute="bottom" secondItem="thw-1V-pyk" secondAttribute="bottomMargin" constant="8" id="ayK-Kz-bV0"/>
+                            <constraint firstItem="AYf-B0-Vng" firstAttribute="leading" secondItem="UZi-5Q-hNQ" secondAttribute="leading" id="V3y-nM-psZ"/>
+                            <constraint firstAttribute="trailing" secondItem="AYf-B0-Vng" secondAttribute="trailing" id="WCq-XN-9uD"/>
+                            <constraint firstItem="AYf-B0-Vng" firstAttribute="top" secondItem="UZi-5Q-hNQ" secondAttribute="top" id="ez8-zL-qFL"/>
                             <constraint firstItem="3Lv-IT-Dk5" firstAttribute="leading" secondItem="ES9-yv-H3J" secondAttribute="leading" constant="8" id="f1n-1h-Ovf"/>
-                            <constraint firstItem="ES9-yv-H3J" firstAttribute="trailing" secondItem="thw-1V-pyk" secondAttribute="trailingMargin" constant="8" id="qWg-6a-V9I"/>
-                            <constraint firstItem="thw-1V-pyk" firstAttribute="topMargin" secondItem="ES9-yv-H3J" secondAttribute="top" constant="8" id="zsq-7i-JBs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xzf-I7-czj"/>
                     <connections>
                         <outlet property="imageView" destination="thw-1V-pyk" id="7A8-30-0W3"/>
+                        <outlet property="scrollView" destination="AYf-B0-Vng" id="Qzj-QS-ix9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFY-Bi-naG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
