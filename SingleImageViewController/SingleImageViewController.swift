@@ -29,12 +29,21 @@ final class SingleImageViewController: UIViewController {
         scrollView.maximumZoomScale = 1.25
         scrollView.delegate = self
     }
-    
     @IBAction func didTapBackButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBAction func didTapShareButton(_ sender: UIButton) {
+        if let image = image {
+            let share = UIActivityViewController(
+                activityItems: [image],
+                applicationActivities: nil
+            )
+            present(share, animated: true, completion: nil)
+        }
+    }
 }
 
 extension SingleImageViewController: UIScrollViewDelegate {

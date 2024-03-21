@@ -16,6 +16,8 @@ final class ImagesListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
     }
 }
@@ -30,9 +32,11 @@ extension ImagesListViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ImagesListCell.reuseIdentifier, for: indexPath) as? ImagesListCell else {
             return UITableViewCell()
         }
-        cell.configCell(with: UIImage(named: photosName[indexPath.row]), date: Date(), isLiked: indexPath.row % 2 == 0)
+        let imageName = photosName[indexPath.row]
+        cell.configCell(with: UIImage(named: imageName), date: Date(), isLiked: indexPath.row % 2 == 0)
         return cell
     }
+
 }
 
 // MARK: - UITableViewDelegate
@@ -57,18 +61,11 @@ extension ImagesListViewController: UITableViewDelegate {
 // MARK: - Navigation
 extension ImagesListViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowSingleImage" {
-            guard
-                let viewController = segue.destination as? SingleImageViewController,
-                let indexPath = sender as? IndexPath,
-                indexPath.row < photosName.count
-            else {
-                assertionFailure("Invalid segue destination")
-                return
-            }
-
-            let image = UIImage(named: photosName[indexPath.row])
-
+        if segue.identifier == showSingleImageSegueIdentifier,
+           let viewController = segue.destination as? SingleImageViewController,
+           let indexPath = sender as? IndexPath,
+           let cell = tableView.cellForRow(at: indexPath) as? ImagesListCell,
+           let image = cell.cellImage.image {
             viewController.image = image
         } else {
             super.prepare(for: segue, sender: sender)
