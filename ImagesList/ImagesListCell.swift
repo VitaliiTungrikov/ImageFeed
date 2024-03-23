@@ -24,6 +24,7 @@ final class ImagesListCell: UITableViewCell {
     
     func configCell(with image: UIImage?, date: Date, isLiked: Bool) {
         if let image = image {
+            print("Setting image in cell: \(image)")
             cellImage.image = image
         }
         dateLabel.text = dateFormatter.string(from: date)
