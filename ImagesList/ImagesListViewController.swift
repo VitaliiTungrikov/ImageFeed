@@ -42,8 +42,6 @@ extension ImagesListViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension ImagesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected row at indexPath: \(indexPath)")
-        print("Preparing to perform segue for indexPath: \(indexPath)")
         performSegue(withIdentifier: "ShowSingleImage", sender: indexPath)
     }
 
